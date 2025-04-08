@@ -5,7 +5,6 @@
 	<a href="/settings">Settings</a>
 </nav>
 
-
 <script>
 	// import { USERPROFILE } from "$env/static/private";
 	import { supabase } from "$lib/supabaseClient";
@@ -25,7 +24,7 @@
 
 {#if user}
 	<p class="text-sm text-gray-600">
-		ログイン中：{user.email}
+		ログイン中です：{user.email}
 	</p>
 {:else}
 	<p class="text-sm text-gray-600">
