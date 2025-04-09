@@ -24,7 +24,7 @@
 
 {#if user}
 	<p class="text-sm text-gray-600">
-		ログイン中です：{user.email}
+		ログイン中ですわよね：{user.email}
 	</p>
 {:else}
 	<p class="text-sm text-gray-600">

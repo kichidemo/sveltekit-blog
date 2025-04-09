@@ -1,5 +1,9 @@
 import adapter from '@sveltejs/adapter-auto';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const config = { kit: { adapter: adapter() } };
-
-export default config;
+export default {
+  kit: {
+    adapter: adapter()
+  },
+  preprocess: vitePreprocess()
+};
