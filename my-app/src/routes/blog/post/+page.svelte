@@ -1,5 +1,6 @@
 <script>
     import {goto} from '$app/navigation';
+	import { USERPROFILE } from '$env/static/private';
     import { supabase } from '$lib/supabaseClient';
     import { onMount } from 'svelte';
 
@@ -34,7 +35,9 @@ async function submitPost() {
         content,
         date,
         tags: tags.split(',').map(tag => tag.trim()),
-        image
+        image,
+        user_id: user.id,
+        user_email : user.email
     };
 
     const {data, error } = await supabase
