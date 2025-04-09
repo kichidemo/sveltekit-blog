@@ -1,6 +1,5 @@
 <script>
     import {goto} from '$app/navigation';
-	import { USERPROFILE } from '$env/static/private';
     import { supabase } from '$lib/supabaseClient';
     import { onMount } from 'svelte';
 
